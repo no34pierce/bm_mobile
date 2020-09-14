@@ -39,8 +39,8 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: "center",
     },
     avatar: {
-      width: theme.spacing(6),
-      height: theme.spacing(6),
+      width: theme.spacing(4),
+      height: theme.spacing(4),
       margin: "auto",
     },
     cardActions: {
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       whiteSpace: "nowrap",
       overflow: "hidden",
       textOverflow: "ellipsis",
+      fontWeight: 600
     },
     selectOrder: {
       position: "absolute",
@@ -154,7 +155,7 @@ function LineupStarterCard(props: Props) {
           <Avatar src={player.image} className={classes.avatar} />
         </CardContent>
         <CardActions className={classes.cardActions}>
-          <Typography variant="button" color="textPrimary" component="div" className={classes.name}>
+          <Typography variant="subtitle2" color="textPrimary" component="div" className={classes.name}>
             {player.name}
           </Typography>
         </CardActions>

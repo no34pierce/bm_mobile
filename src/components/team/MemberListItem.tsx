@@ -30,12 +30,13 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     number: {
-      display: "inline-block",
+      display: "initial",
       width: theme.spacing(3),
       marginRight: theme.spacing(1),
     },
     name: {
       marginRight: theme.spacing(1),
+      fontWeight: 600
     },
     subPrimary: {},
     secondaryItem: {
@@ -72,9 +73,9 @@ function MemberListItem(props: Props) {
             <React.Fragment>
               <Typography
                 component="span"
-                variant="body1"
+                variant="caption"
                 color="textPrimary"
-                align="center"
+                align="right"
                 className={classes.number}
               >
                 {member.number}
