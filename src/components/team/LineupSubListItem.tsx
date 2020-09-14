@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   ListItem,
   ListItemText,
@@ -9,10 +9,10 @@ import {
   IconButton,
   Select,
   MenuItem,
-} from "@material-ui/core";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
-import { createStyles, Theme, makeStyles } from "@material-ui/core/styles";
-import Member from "../../models/Member";
+} from '@material-ui/core';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import Member from '../../models/Member';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
     listItem: {
       // paddingLeft: 0,
       // paddingRight: 0,
-      width: "100%",
+      width: '100%',
     },
     avatar: {
       width: theme.spacing(5),
@@ -31,24 +31,24 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     number: {
-      display: "inline-block",
+      display: 'inline-block',
       width: theme.spacing(3),
       marginRight: theme.spacing(1),
     },
     name: {
       marginRight: theme.spacing(1),
-      fontWeight: 600
+      fontWeight: 600,
     },
     subPrimary: {},
     secondaryItem: {
       marginRight: theme.spacing(1),
     },
     selectOrder: {
-      position: "absolute",
-      display: "block",
+      position: 'absolute',
+      display: 'block',
       height: 0,
-      visibility: "hidden",
-      maxHeight: "100px",
+      visibility: 'hidden',
+      maxHeight: '100px',
     },
   })
 );
@@ -60,7 +60,7 @@ interface Props {
 function LineupSubListItem(props: Props) {
   const classes = useStyles();
   const player: Member = props.player || new Member();
-  const [order, setOrder] = useState<string | number>(player.order || "");
+  const [order, setOrder] = useState<string | number>(player.order || '');
   const [open, setOpen] = useState(false);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
