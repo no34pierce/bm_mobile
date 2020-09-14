@@ -4,6 +4,7 @@ import { Tabs, Tab, Box, Divider } from "@material-ui/core";
 import { createStyles, Theme, makeStyles, useTheme } from "@material-ui/core/styles";
 import MemberManage from "./MemberManage";
 import GameManage from "./GameManage";
+import TeamRecord from "./TeamRecord";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -81,7 +82,7 @@ function TeamViewTabs() {
           <GameManage />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          팀 기록
+          <TeamRecord />
         </TabPanel>
       </SwipeableViews>
     </Box>

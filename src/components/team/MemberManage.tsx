@@ -7,6 +7,9 @@ import Lineup from "./Lineup";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    tabViews: {
+      minHeight: "calc(100vh - 380px)",
+    },
     controlBox: {
       padding: theme.spacing(1),
     },
@@ -222,7 +225,7 @@ function MemberManage() {
   };
 
   return (
-    <Box>
+    <Box className={classes.tabViews}>
       <Box display="flex" justifyContent="center" className={classes.controlBox}>
         <Button
           variant="contained"

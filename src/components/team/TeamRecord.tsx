@@ -50,13 +50,23 @@ const StyledTableCell = withStyles((theme: Theme) =>
   })
 )(TableCell);
 
-function createData(team: string, result: string, run: number, hit: number, error: number, b_h: number) {
+function createData(
+  team: string,
+  result: string,
+  run: number,
+  hit: number,
+  error: number,
+  b_h: number
+) {
   return { team, result, run, hit, error, b_h };
 }
 
-const rows = [createData("블랙 팬더스", "win", 8, 12, 1, 5), createData("삼성 라이온스", "lose", 6, 10, 3, 4)];
+const rows = [
+  createData("블랙 팬더스", "win", 8, 12, 1, 5),
+  createData("삼성 라이온스", "lose", 6, 10, 3, 4),
+];
 
-function GameManage() {
+function TeamRecord() {
   const classes = useStyles();
   const [addMemberOpen, setAddMemberOpen] = useState(false);
   const [lineupOpen, setLineupOpen] = useState(false);
@@ -123,7 +133,10 @@ function GameManage() {
               {rows.map((row, index) => (
                 <TableRow key={index}>
                   <TableCell component="th" scope="row">
-                    {row.team} {row.result === "win" && <StarsIcon fontSize="inherit" className={classes.winIcon} />}
+                    {row.team}{" "}
+                    {row.result === "win" && (
+                      <StarsIcon fontSize="inherit" className={classes.winIcon} />
+                    )}
                   </TableCell>
                   <TableCell align="right">{row.run}</TableCell>
                   <TableCell align="right">{row.hit}</TableCell>
@@ -141,4 +154,4 @@ function GameManage() {
   );
 }
 
-export default GameManage;
+export default TeamRecord;
