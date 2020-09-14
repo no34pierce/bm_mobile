@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     name: {
       marginRight: theme.spacing(1),
+      fontWeight: 600
     },
     subPrimary: {},
     secondaryItem: {
@@ -82,7 +83,7 @@ function LineupSubListItem(props: Props) {
       <ListItemText
         primary={
           <React.Fragment>
-            <Typography component="span" variant="body1" color="textPrimary" align="center" className={classes.number}>
+            <Typography component="span" variant="caption" color="textPrimary" align="right" className={classes.number}>
               {player.number}
             </Typography>
             <Typography component="span" variant="subtitle1" color="textPrimary" className={classes.name}>

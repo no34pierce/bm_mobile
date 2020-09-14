@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     number: {
-      display: "initial",
+      display: "inline-block",
       width: theme.spacing(3),
       marginRight: theme.spacing(1),
     },

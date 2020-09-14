@@ -17,9 +17,8 @@ const useStyles = makeStyles((theme: Theme) =>
       flex: 1,
     },
     subtitle1: {
-      padding: theme.spacing(0),
-      // paddingTop: 0,
-      // paddingBottom: 0,
+      padding: theme.spacing(1),
+      paddingBottom: 0,
     },
     subtitle2: {
       padding: theme.spacing(1),
