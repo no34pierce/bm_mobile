@@ -490,7 +490,7 @@ function Lineup(props: Props) {
         </Toolbar>
       </AppBar>
       <Box>
-        <Box p={2}>
+        <Box p={1}>
           <Typography variant="body1" component="div" gutterBottom className={classes.subtitle1}>
             선발 라인업
           </Typography>
