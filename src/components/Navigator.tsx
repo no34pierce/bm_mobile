@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "100%",
       top: "auto",
       bottom: 0,
-      boxShadow: "1px -3px 5px -1px rgba(0, 0, 0, 0.12)",
+      boxShadow: "5px -2px 3px 0px rgba(0, 0, 0, 0.1)",
       borderTop: "1px solid rgba(0, 0, 0, 0.12)",
     },
     link: {
